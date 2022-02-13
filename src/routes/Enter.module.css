@@ -1,0 +1,132 @@
+.container {
+  display: flex;
+}
+
+.content {
+  background-color: white;
+  width: 100vw;
+  height: 400px;
+  position: relative;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #e50914, #4a141d, #221f1f);
+  box-sizing: border-box;
+}
+
+.title {
+  background-image: linear-gradient(to right, #e50914, #4a141d, #221f1f);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title p {
+  color: #e50914;
+  font-size: 50px;
+  font-family: fantasy;
+  text-shadow: 2px 2px 2px black;
+}
+
+.square {
+  width: 250px;
+  height: 250px;
+  position: relative;
+
+  display: inline-block;
+  left: 22%;
+  margin: 20px;
+}
+
+.allMovie {
+  background-image: linear-gradient(to right, #e50914, #4a141d, #221f1f);
+  height: 50px;
+  text-align: center;
+  padding-top: 25px;
+
+}
+
+.square span {
+  width: inherit;
+  height: inherit;
+  border: 1px solid white;
+  position: absolute;
+  border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
+  transition: 0.5s;
+  animation: circle 3s linear infinite;
+}
+
+.square span:nth-child(2) {
+  animation: circle 5s linear ininite;
+  animation-direction: reverse;
+}
+
+.square span:nth-child(3) {
+  animation: circle 4s linear infinite;
+}
+
+.square:nth-child(1):hover span {
+  background-color: pink;
+  border: none;
+}
+.square:nth-child(2):hover span {
+  background-color: red;
+  border: none;
+}
+.square:nth-child(3):hover span {
+  background-color: yellowgreen;
+  border: none;
+}
+
+.square:hover span:nth-child(1) {
+  opacity: 0.3;
+}
+.square:hover span:nth-child(2) {
+  opacity: 0.5;
+}
+.square:hover span:nth-child(1) {
+  opacity: 0.7;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.square p {
+  font-size: 30px;
+}
+
+.text {
+  position: absolute;
+  text-align: center;
+  top: 25%;
+}
+
+.article{
+  position: relative;
+  background-image: linear-gradient(to right, #e50914, #4a141d, #221f1f);
+}
+
+.allMovie > a{
+  display: inline-block;
+  border: 1px solid white;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 40% 30% 65% 60% / 45% 60% 70% 50%;
+}
+
+.allMovie a:hover{
+  transition : 0.5s;
+  color: black;
+  background-color: white;
+}

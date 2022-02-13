@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Gangwon';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p,a{
+    font-family: "GangWon";
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    color: white;
+    text-decoration: none;
+}
+
