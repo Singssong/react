@@ -37,7 +37,6 @@ function Enter() {
             </div>
           </div>
         </div>
-
         <div className={styles.allMovie}>
           <Link to={"/AllMovie"}>전체영화보기</Link>
         </div>

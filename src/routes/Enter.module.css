@@ -62,7 +62,7 @@ body {
 }
 
 .square span:nth-child(2) {
-  animation: circle 5s linear ininite;
+  animation: circle 5s linear infinite;
   animation-direction: reverse;
 }
 
